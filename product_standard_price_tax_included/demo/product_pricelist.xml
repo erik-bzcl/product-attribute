@@ -5,7 +5,6 @@ Copyright (C) 2015 - Today: GRAP (http://www.grap.coop)
 License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 -->
 <odoo>
-
     <record id="pricelist_price_tax_included" model="product.pricelist">
         <field name="name">Sale Price List based on Cost Price Tax Included</field>
         <field name="currency_id" ref="base.USD" />
@@ -29,5 +28,4 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="compute_price">formula</field>
         <field name="base">standard_price</field>
     </record>
-
 </odoo>

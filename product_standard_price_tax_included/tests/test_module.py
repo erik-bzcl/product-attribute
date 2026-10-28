@@ -9,7 +9,7 @@ class TestProductStandardPriceTaxIncluded(TransactionCase):
     """Tests for 'Cost Price Tax Included' Module"""
 
     def setUp(self):
-        super(TestProductStandardPriceTaxIncluded, self).setUp()
+        super().setUp()
 
         self.SaleOrder = self.env["sale.order"]
         self.SaleOrderLine = self.env["sale.order.line"]
