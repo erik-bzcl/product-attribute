@@ -63,7 +63,7 @@ class TestProductStandardPriceTaxIncluded(TransactionCase):
                 "order_id": self.order.id,
                 "product_id": self.product_tax_included.id,
                 "product_uom_qty": 1,
-                "product_uom": self.uom.id,
+                "product_uom_id": self.uom.id,
             }
         )
         # standard_price is 100 so standard_price vat incl is 120
@@ -85,7 +85,7 @@ class TestProductStandardPriceTaxIncluded(TransactionCase):
                 "order_id": self.order.id,
                 "product_id": self.product_tax_excluded.id,
                 "product_uom_qty": 1,
-                "product_uom": self.uom.id,
+                "product_uom_id": self.uom.id,
             }
         )
         # standard_price is 100 so standard_price vat incl is 120

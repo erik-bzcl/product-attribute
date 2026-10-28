@@ -40,20 +40,23 @@ If you don't use VAT price tax Included, this module is useless.
 
 **Typical Use Case**
 
-You have a product : - Cost : 1000€ (Vat Excl) - Sale Price (Vat incl) :
-2400€ - VAT : 20% (Price with Tax included)
+You have a product:
+
+- Cost: 1000€ (VAT excluded)
+- Sale Price: 2400€ (VAT included)
+- VAT: 20% (price with tax included)
 
 You have a marginless pricelist based on the cost
 
 Without this module, if you create a sale order, the price will be bad,
 and you will sale under your cost price.
 
-|image|
+|Sale order without the module|
 
 With this module installed, the price will be good and you will not
 loose the vat amount, when you realize this sale:
 
-|image1|
+|Sale order with the module|
 
 This module fixes the problem,
 
@@ -63,8 +66,8 @@ This module fixes the problem,
 - adding a new key ``standard_price_tax_included`` on the field ``base``
   of the model ``product.pricelist.item``.
 
-.. |image| image:: https://raw.githubusercontent.com/OCA/product-attribute/19.0/product_standard_price_tax_included/static/description/sale_order_form_without_module.png
-.. |image1| image:: https://raw.githubusercontent.com/OCA/product-attribute/19.0/product_standard_price_tax_included/static/description/sale_order_form_with_module.png
+.. |Sale order without the module| image:: https://raw.githubusercontent.com/OCA/product-attribute/19.0/product_standard_price_tax_included/static/description/sale_order_form_without_module.png
+.. |Sale order with the module| image:: https://raw.githubusercontent.com/OCA/product-attribute/19.0/product_standard_price_tax_included/static/description/sale_order_form_with_module.png
 
 **Table of contents**
 
@@ -76,9 +79,9 @@ Configuration
 
 User can now set Price List based on this field:
 
-|image|
+|Pricelist item based on Cost Price Tax Included|
 
-.. |image| image:: https://raw.githubusercontent.com/OCA/product-attribute/19.0/product_standard_price_tax_included/static/description/product_pricelist_item_form.png
+.. |Pricelist item based on Cost Price Tax Included| image:: https://raw.githubusercontent.com/OCA/product-attribute/19.0/product_standard_price_tax_included/static/description/product_pricelist_item_form.png
 
 Bug Tracker
 ===========

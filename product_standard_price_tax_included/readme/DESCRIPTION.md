@@ -6,20 +6,23 @@ If you don't use VAT price tax Included, this module is useless.
 
 **Typical Use Case**
 
-You have a product : - Cost : 1000€ (Vat Excl) - Sale Price (Vat incl) :
-2400€ - VAT : 20% (Price with Tax included)
+You have a product:
+
+- Cost: 1000€ (VAT excluded)
+- Sale Price: 2400€ (VAT included)
+- VAT: 20% (price with tax included)
 
 You have a marginless pricelist based on the cost
 
 Without this module, if you create a sale order, the price will be bad,
 and you will sale under your cost price.
 
-![image](../static/description/sale_order_form_without_module.png)
+![Sale order without the module](../static/description/sale_order_form_without_module.png)
 
 With this module installed, the price will be good and you will not
 loose the vat amount, when you realize this sale:
 
-![image](../static/description/sale_order_form_with_module.png)
+![Sale order with the module](../static/description/sale_order_form_with_module.png)
 
 This module fixes the problem,
 
